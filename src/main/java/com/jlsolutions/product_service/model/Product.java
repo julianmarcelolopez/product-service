@@ -1,11 +1,13 @@
 package com.jlsolutions.product_service.model;
 
+import lombok.Builder;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
 @Document(collection = "products")
+@Builder
 public class Product {
 	@Id
 	private String id;
